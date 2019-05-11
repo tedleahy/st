@@ -2000,8 +2000,6 @@ config_init(void)
 		return;
 
 	db = XrmGetStringDatabase(resm);
-	for (p = resources; p < resources + LEN(resources); p++)
-		resource_load(db, p->name, p->type, p->dst);
 }
 
 void
